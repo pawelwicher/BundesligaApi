@@ -14,8 +14,9 @@
     </None>
     <Compile Include="Types.fs" />
     <Compile Include="ApiDbContext.fs" />
-    <Compile Include="Controllers\TeamsController.fs" />
     <Compile Include="Startup.fs" />
+    <Compile Include="Controllers\TeamsController.fs" />
+    <Compile Include="Controllers\PlayersController.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
