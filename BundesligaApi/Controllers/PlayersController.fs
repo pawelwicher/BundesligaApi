@@ -10,7 +10,7 @@ type PlayersController (dbContext : ApiDbContext) =
     inherit ControllerBase()
 
     [<HttpGet>]
-    member this.Get() : Player[] =
+    member this.Get() =
         async {
             let players = query {
                 for player in dbContext.Players do
@@ -18,4 +18,4 @@ type PlayersController (dbContext : ApiDbContext) =
             }
             let! result = players.ToArrayAsync() |> Async.AwaitTask
             return result
-        } |> Async.RunSynchronously
+        } |> Async.StartAsTask

@@ -10,7 +10,7 @@ type TeamsController (dbContext : ApiDbContext) =
     inherit ControllerBase()
 
     [<HttpGet>]
-    member this.Get() : Team[] =
+    member this.Get() =
         async {
             let teams = query {
                 for team in dbContext.Teams do
@@ -18,4 +18,4 @@ type TeamsController (dbContext : ApiDbContext) =
             }
             let! result = teams.ToArrayAsync() |> Async.AwaitTask
             return result
-        } |> Async.RunSynchronously
+        } |> Async.StartAsTask
