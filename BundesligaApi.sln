@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30002.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BundesligaApi", "BundesligaApi\BundesligaApi.fsproj", "{D1CE1375-16D9-409C-947B-2798D2298ABF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1CE1375-16D9-409C-947B-2798D2298ABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1CE1375-16D9-409C-947B-2798D2298ABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1CE1375-16D9-409C-947B-2798D2298ABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1CE1375-16D9-409C-947B-2798D2298ABF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E8D6244B-879F-4AED-9223-3B34738B6464}
+	EndGlobalSection
+EndGlobal
