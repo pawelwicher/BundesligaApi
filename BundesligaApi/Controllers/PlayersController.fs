@@ -1,7 +1,7 @@
 ﻿namespace BundesligaApi.Controllers
 
-open System.Linq
 open Microsoft.AspNetCore.Mvc
+open Microsoft.EntityFrameworkCore
 open BundesligaApi
 
 [<ApiController>]
@@ -11,8 +11,11 @@ type PlayersController (dbContext : ApiDbContext) =
 
     [<HttpGet>]
     member this.Get() : Player[] =
-        let players = query {
-            for player in dbContext.Players do
-            select player
-        }
-        players.ToArray()
+        async {
+            let players = query {
+                for player in dbContext.Players do
+                select player
+            }
+            let! result = players.ToArrayAsync() |> Async.AwaitTask
+            return result
+        } |> Async.RunSynchronously
