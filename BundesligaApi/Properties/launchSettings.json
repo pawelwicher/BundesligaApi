@@ -19,7 +19,6 @@
     },
     "BundesligaApi": {
       "commandName": "Project",
-      "launchBrowser": true,
       "launchUrl": "teams",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

@@ -12,15 +12,16 @@
     <None Include="DB.db">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <Compile Include="Types.fs" />
+    <Compile Include="ApiTypes.fs" />
     <Compile Include="ApiDbContext.fs" />
+    <Compile Include="GraphQL.fs" />
     <Compile Include="Startup.fs" />
-    <Compile Include="Controllers\TeamsController.fs" />
-    <Compile Include="Controllers\PlayersController.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="GraphQL" Version="2.4.0" />
+    <PackageReference Include="GraphQL.Server.Transports.AspNetCore" Version="3.4.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.0-preview.4.20220.10" />
   </ItemGroup>
 
