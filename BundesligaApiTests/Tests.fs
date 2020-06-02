@@ -25,6 +25,10 @@ module Tests =
 			        id
 			        code
 			        name
+                    players {
+                        name
+                        goals
+                    }
 		        }
             }""
         }", Encoding.UTF8, "application/json")
