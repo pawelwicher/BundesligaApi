@@ -8,6 +8,7 @@ open Microsoft.Extensions.Configuration
 open Microsoft.Extensions.DependencyInjection
 open GraphQL
 open GraphQL.Server
+open GraphQL.Types
 
 type Startup() =
     new (configuration: IConfiguration) as this =
